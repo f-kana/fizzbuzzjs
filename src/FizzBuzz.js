@@ -8,16 +8,7 @@
 
 // F. 3の倍数でも5の倍数でも無い場合、引数をString型に変換して返却する。
 
-function divisibleByN(num, n) {
-  return num % n === 0;
-}
 
-function divisibleBy3(num) {
-  // return num % 3 === 0;
-  return divisibleByN(num, 3);
-}
-
-const divisibleBy5 = (num) => num % 5 === 0;
 
 function fizzbuzz(num) {
   const ERROR_MESSAGE = "Error";
@@ -38,11 +29,11 @@ function fizzbuzz(num) {
     return ERROR_MESSAGE;
   }
 
-  if (divisibleBy3(num) && divisibleBy5(num)) {
+  if (num % 3 === 0 && num % 5 === 0) {
     return FIZZ + BUZZ;
-  } else if (divisibleBy3(num)) {
+  } else if (num % 3 === 0) {
     return FIZZ;
-  } else if (divisibleBy5(num)) {
+  } else if (num % 5 === 0) {
     return BUZZ;
   }
 
