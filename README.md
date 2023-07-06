@@ -1,3 +1,3 @@
-`npm install && npm run test` to run tests.
-
-`NODE_OPTIONS=--experimental-vm-modules npx jest --watch` to run tests on change.
+- `npm install && npm run test` to run tests.
+- `NODE_OPTIONS=--experimental-vm-modules npx jest --watch` to run tests on change.
+- Memo: ONLY FOR f-kana's LOCAL, `Option + Shift + T` is registered as shortcut for running tests.
